@@ -32,9 +32,10 @@ export class LoginComponent implements OnInit {
 error;
   submitForm(){
     if(this.loginForm.controls.username.errors && this.loginForm.controls.username.errors.required ){
-      this.errorName="user name required "}
+      this.errorName="user name required "
       if(this.loginForm.controls.password.errors && this.loginForm.controls.password.errors.required ){
         this.errorpass="password required"}
+      }
     else{  
     for(let data of this.users){
 if(data.username===this.loginForm.value.username && data.password===this.loginForm.value.password){
