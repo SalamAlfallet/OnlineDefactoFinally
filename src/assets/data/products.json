@@ -1,0 +1,212 @@
+{
+  "products": [
+    {
+      "name": "Sweater",
+      "type": "woman",
+      "description": "Sweater",
+      "image": "../assets/images/Sweater.jpg",
+      "price": "300.3",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "name": "Drawstring Collar Striped Knitwear",
+      "type": "woman",
+      "description": "Drawstring Collar Striped Knitwear",
+      "image": "../assets/images/drawing.jpg",
+      "price": "16"
+    },
+    {
+      "id": 4,
+      "name": "Five Buckle High Collar Pullover",
+      "type": "woman",
+      "description": "Five Buckle High Collar Pullover",
+      "image": "../assets/images/5.jpg",
+      "price": "12"
+    },
+    {
+      "id": 5,
+      "name": "Long coat",
+      "type": "woman",
+      "description": " Double Breasted Turn Down Collar Coat ",
+      "image": "../assets/images/6.jpg",
+      "price": "36"
+    },
+    {
+      "id": "78",
+      "name": "Sweater",
+      "type": "woman",
+      "description": "Drop Shoulder Overlap Knit Sweater",
+      "image": "../assets/images/7.jpg",
+      "price": "18.89"
+    },
+    {
+      "id": "14",
+      "name": "Dress",
+      "type": "woman",
+      "description": "Full Sleeve Slim Sequined Club Dress",
+      "image": "../assets/images/8.jpg",
+      "price": "21.89"
+    },
+    {
+      "id": "55",
+      "name": "coat",
+      "type": "woman",
+      "description": "Shirt Collar Solid Color Batwing  Loose Woolen Coat  ",
+      "image": "../assets/images/9.jpg",
+      "price": "27.39"
+    },
+    {
+      "id": "123",
+      "name": "Scarf ",
+      "type": "woman",
+      "description": " Scarf Women's Sweater",
+      "image": "../assets/images/10.jpg",
+      "price": "10.39"
+    },
+    {
+      "id": "22",
+      "name": "Dress",
+      "type": "woman",
+      "description": "Tiered Lace High Low Dress ",
+      "image": "../assets/images/11.jpg",
+      "price": "40.39"
+    },
+    {
+      "id": "456",
+      "name": "Dress",
+      "type": "woman",
+      "description": "Vintage Floral Midi Flare Dress",
+      "image": "../assets/images/12.jpg",
+      "price": "32.02"
+    },
+    {
+      "id": "15",
+      "name": "Sweater",
+      "type": "woman",
+      "description": "Off Shoulder Geometric Chunky Sweater  ",
+      "image": "../assets/images/13.jpg",
+      "price": "20.42"
+    },
+    {
+      "id": "12",
+      "name": "Jacket",
+      "type": "woman",
+      "description": "Plaid Printed Hooded Long Cardigan Jacket Woman ",
+      "image": "../assets/images/14.jpg",
+      "price": "26.15"
+    },
+    {
+      "id": "555",
+      "name": "Coat",
+      "type": "woman",
+      "description": "Women Autumn Fashion Long Sleeve Cotton Coat",
+      "image": "../assets/images/15.jpg",
+      "price": "200"
+    },
+    {
+      "id": 11,
+      "name": "Jacket",
+      "type": "man",
+      "description": "Slim Solid Color Pocket Men Jacket",
+      "image": "../assets/images/man1.jpg",
+      "price": "17.76"
+    },
+    {
+      "id": 33,
+      "name": "Suit ",
+      "type": "man",
+      "description": "Suit Pattern Print Long Sleeve Hoodie",
+      "image": "../assets/images/man2.jpg",
+      "price": "19.76"
+    },
+    {
+      "id": 34,
+      "name": "Pants",
+      "type": "man",
+      "description": "Faux Back Pocket Zipper Pants",
+      "image": "../assets/images/man3.jpg",
+      "price": "20.15"
+    },
+    {
+      "id": 37,
+      "name": "jaket",
+      "type": "man",
+      "description": "Solid Color Patch Detail Pleated Tee",
+      "image": "../assets/images/man4.jpg",
+      "price": "13.71"
+    },
+    {
+      "id": 40,
+      "name": "Drawstring",
+      "type": "man",
+      "description": "Zip Up Panel Drawstring Hoodie",
+      "image": "../assets/images/man5.jpg",
+      "price": "30.71"
+    },
+    {
+      "id": 41,
+      "name": "Shirt",
+      "type": "man",
+      "description": "Trendy Business Solid Color Long Sleeve ",
+      "image": "../assets/images/man6.jpg",
+      "price": "19.11"
+    },
+    {
+      "id": 45,
+      "name": "Cardigan",
+      "type": "man",
+      "description": "Longline Open Front Hooded Cardigan",
+      "image": "../assets/images/man7.jpg",
+      "price": "21.19"
+    },
+    {
+      "id": 60,
+      "name": "Baby Pink",
+      "type": "baby",
+      "description": "Suit Baby Pink Print Siamese",
+      "image": "../assets/images/baby1.jpg",
+      "price": "15.13"
+    },
+    {
+      "id": 61,
+      "name": "Climbing Suit",
+      "type": "baby",
+      "description": "Baby Boy Cartoon Climbing Suit",
+      "image": "../assets/images/baby2.jpg",
+      "price": "15.85"
+    },
+    {
+      "id": 62,
+      "name": "Sweater",
+      "type": "baby",
+      "description": "Child Sweater Plaid Baseball  ",
+      "image": "../assets/images/baby3.jpg",
+      "price": "17.45"
+    },
+    {
+      "id": 63,
+      "name": "Three-piece",
+      "type": "baby",
+      "description": "Short Sleeve Hare Net Gauze Shorts",
+      "image": "../assets/images/baby4.jpg",
+      "price": "20.45"
+    },
+    {
+      "id": 63,
+      "name": " Tulle Windbreaker",
+      "type": "baby",
+      "description": "Tulle Windbreaker Two-piece ",
+      "image": "../assets/images/baby5.jpg",
+      "price": "25"
+    },
+    {
+      "id": 64,
+      "name": "Jacket",
+      "type": "baby",
+      "description": "Boy Long-sleeved Warm Jacket ",
+      "image": "../assets/images/baby6.jpg",
+      "price": "25"
+    }
+  ]
+}

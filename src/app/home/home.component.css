@@ -1,0 +1,51 @@
+h1{
+    font-family: cursive;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.container{
+    padding-left: 200px;
+    /* background-color: black; */
+}
+.catg1{
+    /* padding:20px; */
+    background-color: black;
+    margin-right: 150px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h2{
+    color: red;
+}
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Form Styling*/
+.example-container {
+    display: flex;
+    flex-direction: column;
+    background-color: mintcream;
+    padding-left: 250px;
+    padding-bottom: 50px;
+
+  }
+  
+  .example-container > * {
+    width: 50%;
+  }
+
+  footer {
+    /* position: fixed; */
+    /* left: 0;
+    bottom: 0; */
+    padding-top:5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }

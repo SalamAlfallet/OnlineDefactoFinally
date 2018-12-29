@@ -1,0 +1,206 @@
+
+
+<div class="tablestyle">
+
+        <h1 >Product Add Form</h1>
+
+        
+<mat-card class="example-container" >
+    
+    <mat-card-content>
+      <form class="example-container" [formGroup]="addForm" >
+
+          
+              <mat-form-field >
+             <input matInput placeholder="Enter your Id product" class="form-control" formControlName="id"  required>
+              </mat-form-field>
+          
+          <mat-form-field>
+            <input matInput placeholder="Enter your name product"  class="form-control" formControlName="name"  required>
+         
+            </mat-form-field>
+          
+          <mat-form-field>
+           <input matInput placeholder="Enter your Description"  class="form-control" formControlName="description"  required>
+          </mat-form-field>
+         
+          <mat-form-field >
+              <input matInput placeholder="Enter your price"  class="form-control" formControlName="price"  required>
+             </mat-form-field>
+             
+          <mat-form-field >
+              <input matInput placeholder="Enter your image"  class="form-control" formControlName="image"  required>
+             </mat-form-field>
+
+             <label>Category: </label>
+             <mat-radio-group  formControlName="type" >
+               <mat-radio-button  *ngFor="let collections of collection" [value]="collections" >
+                 {{collections}}
+               </mat-radio-button>
+             </mat-radio-group>
+
+      </form>
+      <!-- <span>{{errorName}}</span> -->
+      <!-- <span>{{errorpass}}</span> -->
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+    <mat-card-actions>
+      <button  mat-raised-button color="accent" (click)='addProduct(addForm)'>Adding</button>
+    </mat-card-actions>
+  </mat-card> 
+</div>
+<!--   
+<div id="form-outer">
+  
+ 
+
+  <div class="labels">
+    <label> ID: </label>
+  </div>
+  <div class="rightTab">
+    <input autofocus type="text"  [(ngModel)] ='id' class="input-field" placeholder="Enter your Id product" required>
+  </div>
+
+      <div class="labels">
+        <label> Name Product : </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text"  [(ngModel)] ='name' class="input-field" placeholder="Enter your name product" required>
+      </div>
+   
+      <div class="labels">
+        <label >  Category: </label>
+      </div>
+      <div class="rightTab">
+          <input type="radio" [(ngModel)] ='type' value="man" > Man<br>
+          <input type="radio" [(ngModel)] ='type' value="woman"> woman<br>
+          <input type="radio" [(ngModel)] ='type' value='baby'> baby
+       
+      </div>
+    
+      <div class="labels">
+        <label> Description : </label>
+      </div>
+      <div class="rightTab">
+        <input type="text"  [(ngModel)] ='description' class="input-field" placeholder="Description">
+      </div>
+   
+    
+</div>
+  
+     
+    <button id="submit" type="submit" (click)=" addProduct()">Adding</button>
+
+    
+       --> 
+
+    
+
+
+      
+
+<!-- 
+<div class="example-container mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+  
+    
+      <div *ngFor= 'let prod of data'>
+      <ng-container matColumnDef="position" >
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{prod.id}} </td>
+      </ng-container>
+  
+  
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name Product </th>
+        <td mat-cell *matCellDef="let element">{{prod.name}} </td>
+      </ng-container>
+  
+     
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef> type </th>
+        <td mat-cell *matCellDef="let element"> {{prod.type}} </td>
+      </ng-container>
+  
+     
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> description </th>
+        <td mat-cell *matCellDef="let element"> {{prod.description}}</td>
+      </ng-container>
+  
+      
+       <ng-container matColumnDef="symbol">
+          <th mat-header-cell *matHeaderCellDef>delete </th>
+          <td mat-cell *matCellDef="let element"> delete</td>
+        </ng-container>
+
+       
+       <ng-container matColumnDef="symbol">
+          <th mat-header-cell *matHeaderCellDef>Edit </th>
+          <td mat-cell *matCellDef="let element"> edit</td>
+        </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </div>
+    </table>
+
+</div> -->
+  <!-- ///////////////////// -->
+  <br>
+  <br>
+       <table>
+            <tr>
+                <th>Id</th>
+                <th>name Product</th>
+                <th>Category</th> 
+                <th>description</th>
+                <th>Price</th>
+                <th>Edit</th>
+                <th >Delete</th>
+                
+              </tr>
+              <tr *ngFor= 'let prod of data'>
+                <td>{{prod.id}}</td>
+                <td>{{prod.name}}</td> 
+                <td>{{prod.type}}</td>
+                <td>{{prod.description}}</td>
+                <td>{{prod.price}}</td>
+                <td><button  mat-mini-fab color="primary" (click)="onClick(prod.id)">edit</button></td>
+                <td ><button mat-mini-fab color="warn" (click)="delete(prod.id)"> delete </button> </td>
+              </tr>
+        </table> 
+         
+
+        <!-- <div class="mat-elevation-z8">
+          <table mat-table [dataSource]="dataSource">
+        
+            <!-- Position Column -->
+            <!-- <ng-container matColumnDef="position">
+              <th mat-header-cell *matHeaderCellDef> No. </th>
+              <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container> -->
+        
+            <!-- Name Column
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+         -->
+            <!-- Weight Column
+            <ng-container matColumnDef="weight">
+              <th mat-header-cell *matHeaderCellDef> Weight </th>
+              <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+            </ng-container> -->
+        
+            <!-- Symbol Column 
+            <ng-container matColumnDef="symbol">
+              <th mat-header-cell *matHeaderCellDef> Symbol </th>
+              <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        
+          <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+        </div> -->

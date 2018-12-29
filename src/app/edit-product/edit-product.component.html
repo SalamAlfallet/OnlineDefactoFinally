@@ -1,0 +1,45 @@
+
+<div class="tablestyle">
+
+  <h1 >Product Edit Form</h1>
+
+  
+<mat-card class="example-container" >
+
+<mat-card-content>
+<form class="example-container" [formGroup]="editForm" >
+
+    <mat-form-field>
+      <input matInput placeholder="Enter your name product"  class="form-control" formControlName="name"  required>
+   
+      </mat-form-field>
+    
+    <mat-form-field>
+     <input matInput placeholder="Enter your Description"  class="form-control" formControlName="description"  required>
+    </mat-form-field>
+   
+    <mat-form-field >
+        <input matInput placeholder="Enter your price"  class="form-control" formControlName="price"  required>
+       </mat-form-field>
+       
+    <mat-form-field >
+        <input matInput placeholder="Enter your image"  class="form-control" formControlName="image"  required>
+       </mat-form-field>
+
+       <label>Category: </label>
+       <mat-radio-group  formControlName="type" >
+         <mat-radio-button  *ngFor="let collections of collection" [value]="collections" >
+           {{collections}}
+         </mat-radio-button>
+       </mat-radio-group>
+
+</form>
+
+<mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+</mat-card-content>
+<mat-card-actions>
+  <button  mat-raised-button  color="primary"  type="submit" (click)='editProduct()'>edit</button>
+  <button  mat-raised-button color="warn" type="submit" (click)='resetForm()'>cancle</button>
+</mat-card-actions>
+</mat-card> 
+</div>

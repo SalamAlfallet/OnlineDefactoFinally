@@ -1,0 +1,14 @@
+<div *ngFor = "let obj of productWoman" >
+
+
+  
+  <div *ngIf='obj.type === "woman" ' class="gallery" >
+    <a >
+      <img src="{{obj.image}}" alt="Woman" width="300" height="200">
+    </a>
+    <div class="desc" >{{obj.description}}</div>
+    <div class="desc"> {{obj.price | currency}}</div>
+  </div>
+ 
+  </div>
+   

@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+.tablestyle{
+ 
+  background-color:#2f4e4a;
+  text-align:center;
+  min-width: 300px;
+  margin-left:250px;
+ margin-right: 250px;
+}
+h1 {
+  font-family:cursive;
+  display: block;
+  font-size: 2em;
+  padding-top:30px;
+  font-weight: bold;
+  margin-top:60px;
+  color:rgb(240, 12, 152)
+}
+
+
+.mat-card-content, .mat-card-subtitle {
+ font-size: 14px;
+ text-align:left;
+}
+.example-container {
+  
+  flex-direction: column;
+  /* margin-left: 100px; */
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.example-container form {
+  margin-bottom: 20px;
+}
+
+.example-container form > * {
+  margin: 5px 0;
+}
+
+.example-container .mat-radio-button {
+  margin: 0 5px;
+  text-align: left;
+}
+tr:nth-child(even) {background-color: lightslategrey;}
+table, td, th {
+    border: 2px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 40%;
+    margin-left:350px;
+  
+  }
+  
+  th {
+    height: 30px;
+    color: rgb(206, 79, 98);
+ 
+  }
