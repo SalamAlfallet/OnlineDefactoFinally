@@ -10,20 +10,20 @@
 <form class="example-container" [formGroup]="editForm" >
 
     <mat-form-field>
-      <input matInput placeholder="Enter your name product"  class="form-control" formControlName="name"  required>
+      <input matInput placeholder="Enter your name product"  class="form-control" formControlName="name" [value]="data.name" required>
    
       </mat-form-field>
     
     <mat-form-field>
-     <input matInput placeholder="Enter your Description"  class="form-control" formControlName="description"  required>
+     <input matInput placeholder="Enter your Description"  class="form-control" formControlName="description"  [value]="data.description" required>
     </mat-form-field>
    
     <mat-form-field >
-        <input matInput placeholder="Enter your price"  class="form-control" formControlName="price"  required>
+        <input matInput placeholder="Enter your price"  class="form-control" formControlName="price"  [value]="data.price" required>
        </mat-form-field>
        
     <mat-form-field >
-        <input matInput placeholder="Enter your image"  class="form-control" formControlName="image"  required>
+        <input matInput placeholder="Enter your image"  class="form-control" formControlName="image" [value]="data.image" required>
        </mat-form-field>
 
        <label>Category: </label>
