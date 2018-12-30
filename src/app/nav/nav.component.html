@@ -6,11 +6,11 @@
             <li><a routerLink="/category"> My Service</a></li>
             <li><a routerLink="/manageProduct">Manange Products </a></li>
             <!-- <li><a routerLink="/login">Login </a></li> -->
-            <li  *ngIf='!isLoggin'>
+            <li >
                 <button><a routerLink="/login" >Login </a></button>
               </li>
-              <li  *ngIf='isLoggin'>
-                <button>loggout</button>
+              <li >
+                <button mat-icon-button class="menuStyle" (click)="Logout()"> <mat-icon></mat-icon>  Logout  </button>
               </li>
               
         </ul>

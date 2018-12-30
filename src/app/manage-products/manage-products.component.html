@@ -148,7 +148,7 @@
   <!-- ///////////////////// -->
   <br>
   <br>
-       <table>
+       <!-- <table>
             <tr>
                 <th>Id</th>
                 <th>name Product</th>
@@ -169,8 +169,47 @@
                 <td ><button mat-mini-fab color="warn" (click)="delete(prod.id)"> delete </button> </td>
               </tr>
         </table> 
-         
+          -->
 
+        <mat-card class="example-card cardmargin" >
+          <mat-card-header>
+            <mat-card-title> <span class="spancenter"> Selected All Product Details </span> </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+                
+                <div >
+                  <table  >
+                    <thead>
+                        <tr class="borderstyle">
+                            <td > ID </td>
+                            <td > Name Product</td>
+                            <td > Type </td>
+                            <td > Description </td>
+                            <td > price </td>
+                            <td > Edit </td>
+                            <td > Delete </td>
+    
+                        </tr>
+                    </thead>
+                    <tbody>
+                 <tr class="borderstyle" *ngFor= 'let prod of data'>
+                <td>{{prod.id}}</td>
+                <td>{{prod.name}}</td> 
+                <td>{{prod.type}}</td>
+                <td>{{prod.description}}</td>
+                <td>{{prod.price}}</td>
+                <td><button  mat-raised-button type="button" color="primary" (click)="onClick(prod.id)">edit</button></td>
+                <td ><button mat-raised-button color="warn" (click)="delete(prod.id)"> delete </button> </td>
+    
+                        </tr>
+                    </tbody>
+            
+                  </table>
+                
+                </div>
+            <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+          </mat-card-content>
+        </mat-card>
         <!-- <div class="mat-elevation-z8">
           <table mat-table [dataSource]="dataSource">
         

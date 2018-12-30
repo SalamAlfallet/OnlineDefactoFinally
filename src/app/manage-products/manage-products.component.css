@@ -45,7 +45,50 @@ h1 {
   margin: 0 5px;
   text-align: left;
 }
-tr:nth-child(even) {background-color: lightslategrey;}
+
+.cardmargin{
+  margin-top: 30px;
+
+}
+
+table {
+  width: 80%;
+  margin-left: 10%;
+  margin-left: 10%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 20%;
+}
+.marginsty{
+margin: 0px 5px;
+}
+.borderstyle{
+
+  border-block-start-color: 2px solid black;
+}
+.floatright{
+  float:center;
+}
+
+.example-card {
+  max-width: 100%;
+}
+.marginsty{
+  margin: 0px 5px;
+  }
+  .spancenter{
+    position: relative;
+    left: 400px;
+    color: crimson
+}
+
+/* tr:nth-child(even) {background-color: lightslategrey;}
 table, td, th {
     border: 2px solid black;
   }
@@ -61,4 +104,4 @@ table, td, th {
     height: 30px;
     color: rgb(206, 79, 98);
  
-  }
+  } */

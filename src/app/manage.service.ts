@@ -19,8 +19,8 @@ export class ManageService {
   constructor(private http:HttpClient) { }
 
 
- url= "http://localhost:3000/products";
- urlUsers="http://localhost:3600/users";
+ url= "http://localhost:3300/products";
+ urlUsers="http://localhost:3300/users";
 
 getUsers():Observable<[]>{
 

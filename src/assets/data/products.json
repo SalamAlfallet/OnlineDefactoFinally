@@ -137,14 +137,6 @@
       "price": "13.71"
     },
     {
-      "id": 40,
-      "name": "Drawstring",
-      "type": "man",
-      "description": "Zip Up Panel Drawstring Hoodie",
-      "image": "../assets/images/man5.jpg",
-      "price": "30.71"
-    },
-    {
       "id": 41,
       "name": "Shirt",
       "type": "man",
@@ -210,16 +202,15 @@
     }
   ],
   "users": [
-  {
-    "username": "salam alfaleet",
-    "password": "123456",
-    "role":"admin"
-  },
-  {
-    "username": "enas zid",
-    "password": "123456",
-    "role":"user"
-  }
-  
-]
+    {
+      "username": "salam alfaleet",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "username": "enas zid",
+      "password": "123456",
+      "role": "user"
+    }
+  ]
 }
