@@ -9,7 +9,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./edit-product.component.css']
 })
 export class EditProductComponent implements OnInit {
-
+  islogin;
   data=[];
   id;
   // radio button
@@ -27,6 +27,7 @@ export class EditProductComponent implements OnInit {
   })
   
     ngOnInit() {
+      this.manageService.getLogin().subscribe(response => this.islogin = response)
       this.id= parseInt(this.router.snapshot.paramMap.get('id'));
       this.manageService.getProductById(this.id).subscribe(res =>this.data = res )
     }

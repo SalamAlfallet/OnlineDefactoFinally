@@ -39,7 +39,7 @@ error;
     else{  
     for(let data of this.users){
 if(data.username===this.loginForm.value.username && data.password===this.loginForm.value.password){
- 
+  this.manageService.setLogin(true)
 // alert("sucsses");
 this.route.navigate(['/home']);}
 else{

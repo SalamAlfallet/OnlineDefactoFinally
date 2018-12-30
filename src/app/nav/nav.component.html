@@ -4,15 +4,10 @@
             <li><a routerLink="/home">Home</a></li>
             <li><a routerLink="/aboutus">About Us</a></li>
             <li><a routerLink="/category"> My Service</a></li>
-            <li><a routerLink="/manageProduct">Manange Products </a></li>
-            <!-- <li><a routerLink="/login">Login </a></li> -->
-            <li >
-                <button><a routerLink="/login" >Login </a></button>
-              </li>
-              <li >
-                <button mat-icon-button class="menuStyle" (click)="Logout()"> <mat-icon></mat-icon>  Logout  </button>
-              </li>
-              
+            <li><a *ngIf = "islogin" routerLink="/manageProduct">Manange Products </a></li>
+           <li><a *ngIf = "!islogin"  routerLink="/login">Login </a></li>
+           <li><a  *ngIf = "islogin" class="nav-item nav-link" routerLink="/login" (click) = "Logout()">Logout</a></li>
+          
         </ul>
       
   

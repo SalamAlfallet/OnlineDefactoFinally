@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -21,6 +21,15 @@ export class ManageService {
 
  url= "http://localhost:3300/products";
  urlUsers="http://localhost:3300/users";
+ isloginin = new Subject();
+ setLogin(success){
+  this.isloginin.next(success);
+  
+   } 
+  
+   getLogin(){
+     return this.isloginin.asObservable()
+   }
 
 getUsers():Observable<[]>{
 
